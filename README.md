@@ -2,49 +2,10 @@
 
 ## 代码运行
 
-### 环境 requirements
-
-- pandas
-- Scikit-learn
-- Xlrd (读取xlsx文件需要)
-- xgboost
-- numpy
-
-### 代码运行
-
-
-
-## 任务简介
-
-
-
-## 模型原理
-
-### 决策树
-
-### 集成学习 AdaBoost
-
-### GDBoost
-
-### XGBoost
-
-
-
-## 调参方法与数据选择
-
-参数调整采用格点搜索的方法对如下几个参数进行搜索：
-
-- 'booster': ['gbtree', 'dart'],
-- 'gamma': [0.001, 0.01, 0.1, 1, 10, 100]
-- 'max_depth': [3, 4, 5, 6, 7]
-- 'n_estimators': [100, 200, 500, 1000, 1500]
-
-搜索给出的最优参数为：
-
-- booster = gbtree
-- Gamma = 0.001
-- max_depth = 6
-- n_estimators = 1500
-
-
+```shell
+git clone https://github.com/xnliang98/ml2019-buaa-hw01
+cd ml2019-buaa-hw01
+pip install -r requirements.txt
+python classifier.py
+```
 
