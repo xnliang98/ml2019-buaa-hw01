@@ -71,8 +71,15 @@ print("验证集评分：", roc_auc_score(res, y_test))
 # 生成提交文件
 submit_x, _ = preprocess(test, False)
 res = clf.predict_proba(submit_x)
-
+print("生成submission.txt文件...")
 with open('submission.txt', 'w') as f:
     for i in res:
         f.writelines("%.6f" % i[1])
         f.writelines('\n')
+
+# 生成压缩文件
+import zipfile
+print("压缩submission.zip 文件")
+with zipfile.ZipFile('submission.zip', 'w', zipfile.ZIP_DEFLATED) as f:
+    f.write('submission.txt')
+print("Ended!")
