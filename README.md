@@ -1,11 +1,5 @@
 # 语音性别识别技术报告
 
-> 姓名： 梁新年
->
-> 学号：BY1906024
-
-
-
 ## 代码运行
 
 ### 环境 requirements
@@ -54,8 +48,3 @@
 
 
 
-## 结果与排名 20191107
-
-![image-20191107191611966](/Users/xinnianliang/Library/Application Support/typora-user-images/image-20191107191611966.png)
-
-最终效果为0.993838.
